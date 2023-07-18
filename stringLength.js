@@ -4,9 +4,10 @@ function stringLength(string) {
         for (let i = 0; i < string.length; i++) {
             count += 1
         }
+        return count
+    } else {
+        throw new Error("String is greater than 10")
     }
-
-    return count
 }
 
 module.exports = stringLength
