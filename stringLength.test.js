@@ -12,3 +12,7 @@ test('at least 1 character long', () => {
 test('less than 10 character count', () => {
     expect(stringLength("hello dear")).toBe(10);
 });
+
+test('throw error message when string is greater than 10', () => {
+    expect(() => stringLength("my name is winnie")).toThrow(Error);
+});
