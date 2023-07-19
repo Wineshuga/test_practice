@@ -1,13 +1,13 @@
+const cap = require('./capitalize')
+
 describe('Capitalize strings', () => { 
     test('should take a string as an argument', () => { 
         // Arrange
         const text = 12345
 
         // Act
-        const example = cap(text)
-
         // Assert
-        expect(() => example).toThrow(Error)
+        expect(() => cap(text)).toThrow(Error)
      })
 
      test('should capitalize first character of string', () => { 
@@ -26,10 +26,8 @@ describe('Capitalize strings', () => {
         const text = ""
 
         // Act
-        const example = cap(text)
-
         // Assert
-        expect(() => example).toThrow(Error)
+        expect(() => cap(text)).toThrow(Error)
      })
  
  })
